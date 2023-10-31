@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,900&family=Staatliches&display=swap');
+
+.TakleTimes{
+    font-size: 100px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.All-Teams {
+    max-width: 100%; /* Adjust the max width as needed */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.teams {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.favoriteTeam {
+    width: 25%; /* 25% width for 4 columns in a row */
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding: 10px; /* Add spacing between images as needed */
+    text-align: center; /* Center the images horizontally */
+  
+}
+
+.favoriteTeam img {
+    width: 400px; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.favoriteTeam:hover {
+    background-color: lightgreen; /* Change background color on hover */
+    border-radius: 50%;
+    
+}
+
+.favoriteTeam:hover img {
+    width: 420px; /* Set the larger width on hover */
+    height: 420px; /* Set the larger height on hover */
+}
+
+
+.favoriteTeam img {
+    width: 400px; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+    border-style: solid;
+    border-radius: 50%;
+    transition: all 0.3s; /* Add a smooth transition effect */
+ }
+
+ .favoriteTeam:hover img {
+    width: 420px; /* Set the larger width on hover */
+    height: 420px; /* Set the larger height on hover */
+}
+
+ .discription{
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+ }
+ .favoriteTeam.active {
+    background-color: lightgreen;
+    border-radius: 50%;
+}
+
+.myButton {
+	box-shadow: 4px 3px 4px 0px #3dc21b;
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:27px;
+	font-weight:bold;
+	font-style:italic;
+	padding:19px 76px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    position: fixed;
+    right: 20px; /* Adjust the right value as needed */
+    top: 90%; /* Adjust the top value if you want to vertically center it */
+    transform: translateY(-50%); /* Vertically center the button */
+}
+.myButton:hover {
+	background-color:#74db3d;
+}
+ .myButton:active {
+	background-color:#74db3d;
+    border-radius: 50%;
+} 
+
+/* add animation to button where when clicked turns into football and moves across the scree  */
