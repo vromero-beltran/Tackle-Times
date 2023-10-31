@@ -12,10 +12,10 @@ router.get('/', async (req, res) => {
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');
-    return;
+  //   return;
   }
 
-  res.render('login');
+  // res.json("logged in");
 });
 
 module.exports = router;
