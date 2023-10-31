@@ -1,4 +1,3 @@
-// Add this JavaScript code to your HTML file, typically in a <script> tag or an external JavaScript file.
 
 // Function to toggle the background and visibility of the "Next" button
 function toggleBackground(element) {
