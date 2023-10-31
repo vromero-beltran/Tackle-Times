@@ -9,7 +9,7 @@ body {
 }
 .takle{
     color: red;
-    z-index: 2;
+    z-index: 1;
 }
 .time{
     color: white;
@@ -59,7 +59,7 @@ body {
 .favoriteTeam img {
     width: 400px; /* Set the desired width */
     height: 400px; /* Set the desired height */
-    border-style: solid;
+ 
     border-radius: 50%;
 }
 
@@ -148,4 +148,13 @@ body {
 
 .highlighted-text {
     color: blue; /* You can set any color you like */
+}
+
+.page-container {
+    background-image: url("/Nfl\ logos/football field.jpg");
+    background-size: cover; /* Adjust background size as needed */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    /* Other styles for the container, such as padding, width, and height, can be set here */
+    z-index: 2;
 }
