@@ -1,5 +1,5 @@
-DROP DATABASE IF EXISTS tackle_times_db;
+DROP DATABASE IF EXISTS tackle_time;
 
-CREATE DATABASE tackle_times_db;
+CREATE DATABASE tackle_time;
 
-USE tackle_times_db;
+USE tackle_time;
