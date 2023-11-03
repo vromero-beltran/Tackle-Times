@@ -37,6 +37,7 @@ body {
 }
 
 .TakleTimes{
+    position: relative;
     font-size: 100px;
     text-align: center;
     margin: 0 0 100px 0;
@@ -45,24 +46,77 @@ body {
     display: flex;
     text-align: center;
     justify-content: center;
-   
+    animation: glitch 4s linear infinite;
 }
+.takle, .time {
+    position: relative;
+    display: inline-block; 
+}
+@keyframes glitch{
+  2%, 64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%, 60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+.TakleTimes:before,
+.takle::before, .takle::after,
+.time::before, .time::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes glitchTop{
+  2%, 64%{
+    transform: translate(2px,-2px);
+  }
+  4%, 60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+.TakleTimes:after{
+  animation: glitchBotom 5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  bottom: 0;
+}
+
+@keyframes glitchBotom{
+  2%, 64%{
+    transform: translate(-2px,0);
+  }
+  4%, 60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+
 
 .MyFavTeam {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly; /* This will space out the child elements evenly */
-    align-items: center; /* This will align items vertically */
+    justify-content: space-evenly; 
+    align-items: center; 
     max-width: 1424px;
     margin: auto;
-    gap: 20px; /* This gap will provide space between the flex items */
+    gap: 20px; 
 }
 
 .box {
-    border: 1px solid #000;
-    background-color: #e0e0e0;
     padding: 20px;
-    width: calc(33% - 40px); /* Adjust width to fit three boxes evenly with gaps */
+    width: calc(33% - 40px); 
     box-shadow: 1px 1px 1px #000000,
     1px 2px 1px red,
     1px 3px 1px red,
@@ -74,16 +128,41 @@ body {
     1px 20px 30px rgba(16, 16, 16, 0.3),
     1px 25px 50px rgba(16, 16, 16, 0.2);
     border-radius: 10px;
-    margin-bottom: 20px; /* Add some space at the bottom of each box */
+    margin-bottom: 20px; 
+    transition: backroungd-color, box-shadow 1s ease-in-out;
 }
-
+.box:hover {
+    background-color: rgba(255, 255, 255, 0.356);
+    border: 0px;
+    box-shadow: 
+        1px 1px 1px #000000,
+        1px 2px 1px lime,
+        1px 3px 1px lime,
+        1px 4px 1px magenta,
+        1px 5px 1px magenta,
+        1px 6px 1px cyan,
+        1px 10px 5px rgba(16, 255, 16, 0.5),
+        1px 15px 10px rgba(255, 16, 255, 0.4),
+        1px 20px 30px rgba(16, 255, 255, 0.3),
+        1px 25px 50px rgba(255, 16, 16, 0.2);
+}
 
 h2 {
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+  
 }
 
 p {
     text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
 }
+
+* {
+  cursor: url(https://cur.cursors-4u.net/sports/spo-1/spo37.ani), 
+          url(https://cur.cursors-4u.net/sports/spo-1/spo37.png), 
+          auto !important;
+}
+
