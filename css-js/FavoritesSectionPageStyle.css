@@ -223,3 +223,75 @@ body {
 .footballplayerQb{
     position: absolute;
 }
+
+@media (max-width: 768px) {
+    .takle, .time {
+        font-size: 10vw;
+    }
+
+    .TakleTimes {
+        font-size: 6vw;
+    }
+
+    .discription {
+        margin-top: 20px;
+        top: 5%;
+        font-size: 2vw;
+    }
+
+    .favoriteTeam {
+        width: 50%;
+    }
+
+    .favoriteTeam img {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .favoriteTeam:hover img {
+        width: 42vw;
+        height: 42vw;
+    }
+
+    .myButton {
+        font-size: 3vw;
+        padding: 3vw 10vw;
+        right: 2%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .takle, .time {
+        font-size: 6vw;
+    }
+
+    .TakleTimes {
+        font-size: 4vw;
+    }
+
+    .discription {
+        margin-top: 20px;
+        top: 5%;
+        font-size: 1.5vw;
+    }
+
+    .favoriteTeam {
+        width: 50%;
+    }
+
+    .favoriteTeam img {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .favoriteTeam:hover img {
+        width: 32vw;
+        height: 32vw;
+    }
+
+    .myButton {
+        font-size: 2.5vw;
+        padding: 2.5vw 8vw;
+        right: 2%;
+    }
+}
