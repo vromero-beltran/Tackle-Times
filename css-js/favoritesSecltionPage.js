@@ -1,9 +1,18 @@
-
-// Function to toggle the background and visibility of the "Next" button
+// Function to toggle the background and navigate to the next page
+// Function to toggle the background and save the "id" to local storage
 function toggleBackground(element) {
     const isActive = element.parentElement.classList.toggle('active');
-    showNextButton(isActive);
+    if (isActive) {
+        showNextButton(true);
+        const imageId = element.id; // Get the "id" of the clicked image
+        // Save the "id" to local storage
+        localStorage.setItem("selectedImageId", imageId);
+    } else {
+        showNextButton(false);
+        localStorage.removeItem("selectedImageId"); // Remove the "id" from local storage
+    }
 }
+
 
 // Function to show or hide the "Next" button based on team selection
 function showNextButton(isActive) {
