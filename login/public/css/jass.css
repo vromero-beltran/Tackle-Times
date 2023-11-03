@@ -917,11 +917,11 @@ a:hover {
 
 /* BACKGROUND UTILS */
 .bg-primary {
-  background-color: #2d3e50 !important;
+  background-color: blue !important;
 }
 
 .bg-info {
-  background-color: #1bbc9b !important;
+  background-color: red !important;
 }
 
 .bg-danger {
@@ -1009,12 +1009,12 @@ a:hover {
 }
 
 .btn.btn-primary {
-  background-color: #2d3e50;
+  background-color: blue;
   color: #d9e9e8;
 }
 
 .btn.btn-primary:hover {
-  background-color: #57779a;
+  background-color: red;
 }
 
 .btn.btn-danger {
@@ -1050,7 +1050,7 @@ a:hover {
 }
 
 .btn.btn-dark:hover {
-  background-color: #5f5f5f;
+  background-color: red;
 }
 
 .btn.btn-white {
@@ -1068,7 +1068,7 @@ a:hover {
 }
 
 .btn.btn-black:hover {
-  background-color: #666666;
+  background-color: red;
 }
 
 .btn.btn-link {
@@ -1087,7 +1087,7 @@ a:hover {
 
 .card .card-header {
   padding: 0.375rem;
-  background-color: #2d3e50;
+  background-color: red;
   color: #d9e9e8;
 }
 
@@ -1146,7 +1146,7 @@ form .form-input {
   background-color: #ffffff;
   margin: 0.625rem 0;
   font-size: 1.2rem;
-  border: 1px solid #484848;
+  border: 1px solid red;
   border-radius: 0.3rem;
 }
 
