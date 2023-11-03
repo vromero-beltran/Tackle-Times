@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,900&family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: lightgrey;
+}
+.takle{
+    color: red;
+    font-size: 100px;
+    text-shadow: 1px 1px 1px #000000,
+    1px 2px 1px white,
+    1px 3px 1px white,
+    1px 4px 1px blue,
+    1px 5px 1px blue,
+    1px 6px 1px blue,
+    1px 10px 5px rgba(16, 16, 16, 0.5),
+    1px 15px 10px rgba(16, 16, 16, 0.4),
+    1px 20px 30px rgba(16, 16, 16, 0.3),
+    1px 25px 50px rgba(16, 16, 16, 0.2);
+}
+.time{
+    color: white;
+    font-size: 100px;
+    text-shadow: 1px 1px 1px #000000,
+    1px 2px 1px red,
+    1px 3px 1px red,
+    1px 4px 1px blue,
+    1px 5px 1px blue,
+    1px 6px 1px blue,
+    1px 10px 5px rgba(16, 16, 16, 0.5),
+    1px 15px 10px rgba(16, 16, 16, 0.4),
+    1px 20px 30px rgba(16, 16, 16, 0.3),
+    1px 25px 50px rgba(16, 16, 16, 0.2);
+}
+
+.TakleTimes{
+    font-size: 100px;
+    text-align: center;
+    margin: 0 0 100px 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+   
+}
+
+.MyFavTeam {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* This will space out the child elements evenly */
+    align-items: center; /* This will align items vertically */
+    max-width: 1424px;
+    margin: auto;
+    gap: 20px; /* This gap will provide space between the flex items */
+}
+
+.box {
+    border: 1px solid #000;
+    background-color: #e0e0e0;
+    padding: 20px;
+    width: calc(33% - 40px); /* Adjust width to fit three boxes evenly with gaps */
+    box-shadow: 1px 1px 1px #000000,
+    1px 2px 1px red,
+    1px 3px 1px red,
+    1px 4px 1px blue,
+    1px 5px 1px blue,
+    1px 6px 1px blue,
+    1px 10px 5px rgba(16, 16, 16, 0.5),
+    1px 15px 10px rgba(16, 16, 16, 0.4),
+    1px 20px 30px rgba(16, 16, 16, 0.3),
+    1px 25px 50px rgba(16, 16, 16, 0.2);
+    border-radius: 10px;
+    margin-bottom: 20px; /* Add some space at the bottom of each box */
+}
+
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
