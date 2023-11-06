@@ -223,3 +223,147 @@ body {
 .footballplayerQb{
     position: absolute;
 }
+
+@media (max-width: 768px) {
+    .takle, .time {
+        font-size: 10vw;
+    }
+
+    .TakleTimes {
+        font-size: 6vw;
+    }
+
+    .discription {
+        margin-top: 20px;
+        top: 5%;
+        font-size: 2vw;
+    }
+
+    .favoriteTeam {
+        width: 50%;
+    }
+
+    .favoriteTeam img {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .favoriteTeam:hover img {
+        width: 42vw;
+        height: 42vw;
+    }
+
+    .myButton {
+        font-size: 3vw;
+        padding: 3vw 10vw;
+        right: 2%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .takle, .time {
+        font-size: 6vw;
+    }
+
+    .TakleTimes {
+        font-size: 4vw;
+    }
+
+    .discription {
+        margin-top: 20px;
+        top: 5%;
+        font-size: 1.5vw;
+    }
+
+    .favoriteTeam {
+        width: 50%;
+    }
+
+    .favoriteTeam img {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .favoriteTeam:hover img {
+        width: 32vw;
+        height: 32vw;
+    }
+
+    .myButton {
+        font-size: 2.5vw;
+        padding: 2.5vw 8vw;
+        right: 2%;
+    }
+}
+
+@media (max-width: 320px) {
+    .takle, .time {
+        font-size: 14vw; /* Adjust font size for 320px screens */
+    }
+
+    .TakleTimes {
+        font-size: 8vw; /* Adjust font size for 320px screens */
+    }
+
+    .discription {
+        margin-top: 10px; /* Adjust the margin for 320px screens */
+        top: 5%;
+        font-size: 1.5vw; /* Adjust font size for 320px screens */
+    }
+
+    .favoriteTeam {
+        width: 100%; /* Use full width for smaller screens */
+    }
+
+    .favoriteTeam img {
+        width: 90vw; /* Adjust image width for 320px screens */
+        height: 90vw; /* Adjust image height for 320px screens */
+    }
+
+    .favoriteTeam:hover img {
+        width: 92vw; /* Adjust larger image width for 320px screens */
+        height: 92vw; /* Adjust larger image height for 320px screens */
+    }
+
+    .myButton {
+        font-size: 3vw; /* Adjust font size for 320px screens */
+        padding: 3vw 10vw; /* Adjust padding for 320px screens */
+        right: 2%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .takle, .time {
+        font-size: 5vw; /* Adjust font size for 1200px screens */
+    }
+
+    .TakleTimes {
+        font-size: 3vw; /* Adjust font size for 1200px screens */
+    }
+
+    .discription {
+        margin-top: 15px; /* Adjust the margin for 1200px screens */
+        top: 5%;
+        font-size: 1.2vw; /* Adjust font size for 1200px screens */
+    }
+
+    .favoriteTeam {
+        width: 33.33%; /* 3 columns in a row for 1200px screens */
+    }
+
+    .favoriteTeam img {
+        width: 22vw; /* Adjust image width for 1200px screens */
+        height: 22vw; /* Adjust image height for 1200px screens */
+    }
+
+    .favoriteTeam:hover img {
+        width: 24vw; /* Adjust larger image width for 1200px screens */
+        height: 24vw; /* Adjust larger image height for 1200px screens */
+    }
+
+    .myButton {
+        font-size: 2vw; /* Adjust font size for 1200px screens */
+        padding: 2vw 7vw; /* Adjust padding for 1200px screens */
+        right: 2%;
+    }
+}
