@@ -12,7 +12,7 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('http://127.0.0.1:5500/myfavoriteteams.html');
+      document.location.replace('http://127.0.0.1:5501/myfavoriteteams.html');
     } else {
       alert('Failed to log in.');
     }
@@ -34,7 +34,7 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('http://127.0.0.1:5500/favoritesSectionPage.html');
+      document.location.replace('http://127.0.0.1:5501/favoritesSectionPage.html');
     } else {
       alert('Failed to sign up.');
     }
