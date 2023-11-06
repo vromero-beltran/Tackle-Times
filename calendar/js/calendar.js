@@ -75,7 +75,8 @@ const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'Ju
 				showEventModal(date) {
 					// open the modal
 					this.openEventModal = true;
-					this.event_date = new Date(this.year, this.month, date).toDateString();
+					this.event_date = date;
+					this.event_title = 'Custom Event'; 
 				},
 
 				addEvent() {
@@ -120,7 +121,7 @@ const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'Ju
 				}
 			}
 		};
-
+//api call
 fetch('http://api.sportradar.us/nfl/official/trial/v7/en/games/current_season/schedule.json?api_key=qzzcby3fq9nxwz25zkfx6dj6')
     .then(response => {
         if(!response.ok) {
@@ -147,11 +148,13 @@ fetch('http://api.sportradar.us/nfl/official/trial/v7/en/games/current_season/sc
                 const stadiumName = game.venue.name;
                 // checks if the game includes favoriteTeam
                 if (homeTeamName === favoriteTeam || awayTeamName === favoriteTeam) {
-                  console.log(`Home Team: ${homeTeamName}`);
-                  console.log(`Away Team: ${awayTeamName}`);
-                  console.log(`Scheduled Date: ${scheduledDate}`);
-                  console.log(`Stadium Name: ${stadiumName}`);
-                }
+					// get and pull?
+					this.events.push({
+						event_date: scheduledDate,
+						event_title: `${homeTeamName} vs ${awayTeamName}`,
+						event_theme: 'blue' 
+					});
+				}
               }
             }
           }
