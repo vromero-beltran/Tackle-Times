@@ -40,7 +40,7 @@ body {
     position: relative;
     font-size: 100px;
     text-align: center;
-    margin: 0 0 100px 0;
+    margin: 0 0 10px 0;
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
     display: flex;
@@ -166,3 +166,101 @@ p {
           auto !important;
 }
 
+.All-Teams {
+  max-width: 100%; /* Adjust the max width as needed */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.teams {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.favoriteTeam {
+  width: 25%; /* 25% width for 4 columns in a row */
+  box-sizing: border-box; /* Include padding and border in the width */
+  padding: 10px; /* Add spacing between images as needed */
+  text-align: center; /* Center the images horizontally */
+  z-index: 2;
+}
+
+
+
+
+.favoriteTeam img {
+  width: 250px; /* Set the desired width */
+  height: 250px; /* Set the desired height */
+  border-radius: 50%; /* Make the images circular */
+  border: 2px solid black; /* Add a border */
+}
+.favoriteTeam img:hover {
+  background-color: lightgreen;
+}
+
+ 
+.favoriteTeam img.active {
+  background-color: lightgreen;
+}
+
+.favoriteTeam:hover {
+
+  border-radius: 50%;
+  
+}
+
+
+
+.allTeams {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Add margin between rows as needed */
+}
+
+
+h3 {
+  font-size:40px;
+  font-family: 'Nunito Sans', sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.myButton {
+	box-shadow: 4px 3px 4px 0px #3dc21b;
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:27px;
+	font-weight:bold;
+	font-style:italic;
+	padding:19px 76px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    position: absolute;
+    right: 20px; /* Adjust the right value as needed */
+    top: 90%; /* Adjust the top value if you want to vertically center it */
+    transform: translateY(-50%); /* Vertically center the button */
+    z-index: 20;
+}
+.myButton:hover {
+	background-color:#74db3d;
+}
+ .myButton:active {
+	background-color:#74db3d;
+    border-radius: 50%;
+} 
+
+.selected img {
+  background-color: lightgreen;
+}

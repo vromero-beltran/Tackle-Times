@@ -114,11 +114,7 @@ body {
     transition: all 0.3s; /* Add a smooth transition effect */
  }
 
- .favoriteTeam:hover img {
-    width: 420px; /* Set the larger width on hover */
-    height: 420px; /* Set the larger height on hover */
-}
-
+ 
  
  .favoriteTeam.active {
     background-color: lightgreen;
