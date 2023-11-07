@@ -11,13 +11,6 @@ function toggleBackground(element) {
 
 // Rest of your code remains the same
 
-
-
-
-
-
-
-
 function initializeSelectedTeams() {
     const selectedTeams = JSON.parse(localStorage.getItem("selectedTeams")) || [];
 

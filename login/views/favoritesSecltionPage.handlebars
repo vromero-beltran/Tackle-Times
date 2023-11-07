@@ -1,58 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="discription">
+    <h1 class="">Choose your <span class="highlighted-text">FAVORITE</span> teams to access their <span
+            class="highlighted-text">SCHEDULES,</span> <span class="highlighted-text">VENUES,</span> <span
+            class="highlighted-text">BROADCASTING INFORMATION,</span> and ticket <span class="highlighted-text">PURCHASE
+            OPTIONS!</span></h1>
+</div>
+<div class="footballplayer">
+    <img src="./Nfl logos/Football player (1).png" alt="">
+</div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css-js/FavoritesSectionPageStyle.css">
-</head>
+<div class="page-container">
+    <video autoplay loop muted playsinline id="background-video">
+        <source src="Nfl logos/Liam Mullany-football-players-practicing-in-a-stadium-342383-filmsupply.mp4"
+            type="video/mp4">
+    </video>
 
-<body>
-
-    <div class="TakleTimes">
-
-        <h1 class="takle">Takle</h1>
-        <h1 class="time">Time</h1>
-    </div>
-    <div class="discription">
-        <h1 class="">Choose your <span class="highlighted-text">FAVORITE</span> teams to access their <span
-                class="highlighted-text">SCHEDULES,</span> <span class="highlighted-text">VENUES,</span> <span
-                class="highlighted-text">BROADCASTING INFORMATION,</span> and ticket <span
-                class="highlighted-text">PURCHASE OPTIONS!</span></h1>
-    </div>
-    <div class="footballplayer">
-        <img src="./Nfl logos/Football player (1).png" alt="">
+    <div class="next-btn">
+        <a href="./myfavoriteteams.html" class="myButton" id="nextButton" style="display: none;">Next</a>
     </div>
 
-    <div class="page-container">
-        <video autoplay loop muted playsinline id="background-video">
-            <source src="Nfl logos/Liam Mullany-football-players-practicing-in-a-stadium-342383-filmsupply.mp4" type="video/mp4">
-        </video>
+    <!-- Use Handlebars templates for teams -->
 
-        <div class="next-btn">
-            <a href="./myfavoriteteams.html" class="myButton" id="nextButton" style="display: none;">Next</a>
-        </div>
 
-        <!-- Use Handlebars templates for teams -->
-        <script id="team-template" type="text/x-handlebars-template">
-            <div class="favoriteTeam">
+    <div class="All-Teams">
+        <div class="teams">
+            <!-- Include Handlebars content here -->
+            <div class="NflTeams">
                 <img id="{{id}}" src="{{imageSrc}}" alt="{{altText}}" onclick="toggleBackground(this)">
             </div>
-        </script>
-
-        <div class="All-Teams">
-            <div class="teams">
-                <!-- Include Handlebars content here -->
-            </div>
         </div>
     </div>
+</div>
+<!-- Include Handlebars library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+<!-- Include your Handlebars script here -->
 
-    <!-- Include Handlebars library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
-    <!-- Include your Handlebars script here -->
-
-    <script src="./css-js/favoritesSecltionPage.js"></script>
-</body>
-
-</html>
+{{!-- <script src="./css-js/favoritesSecltionPage.js"></script> --}}
