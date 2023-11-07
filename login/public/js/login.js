@@ -15,7 +15,7 @@ const loginFormHandler = async (event) => {
 
     if (response.ok) {
       // If successful, redirect the browser to the profile page
-      document.location.replace('/favteam');
+      document.location.replace('/myfavoriteteams');
     } else {
       alert('Failed to log in.');
     }
@@ -37,7 +37,7 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('http://127.0.0.1:5501/favoritesSectionPage.html');
+      document.location.replace('/favoritesSecltionPage');
     } else {
       alert('Failed to sign up.');
     }
