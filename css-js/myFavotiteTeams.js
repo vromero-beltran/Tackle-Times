@@ -1,3 +1,18 @@
+const selectedTeams = [];
+
+
+function showNextButton() {
+    const nextButton = document.getElementById("nextButton");
+    nextButton.style.display = "block";
+}
+function toggleBackground(element) {
+    element.parentElement.classList.toggle('selected');
+}
+
+// Rest of your code remains the same
+
+
+
 
 
 
@@ -27,3 +42,27 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// Sample data for your teams
+const teamsData = {
+    teams: [
+        {
+            id: 'team1',
+            imageSrc: 'path-to-image1.png',
+            altText: 'Team 1',
+        },
+        {
+            id: 'team2',
+            imageSrc: 'path-to-image2.png',
+            altText: 'Team 2',
+        },
+        // Add more teams as needed
+    ],
+};
+
+// Compile the Handlebars template
+const source = document.getElementById('team-template').innerHTML;
+const template = Handlebars.compile(source);
+
+// Render the template with data
+const teamList = document.getElementById('teamList');
+teamList.innerHTML = template(teamsData);

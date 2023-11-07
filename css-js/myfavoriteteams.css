@@ -186,6 +186,7 @@ p {
 
 
 
+
 .favoriteTeam img {
   width: 250px; /* Set the desired width */
   height: 250px; /* Set the desired height */
@@ -259,3 +260,7 @@ h3 {
 	background-color:#74db3d;
     border-radius: 50%;
 } 
+
+.selected img {
+  background-color: lightgreen;
+}

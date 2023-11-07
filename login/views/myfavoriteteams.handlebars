@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-js/myfavoriteteams.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="TakleTimes">
+        <h1 class="takle" data-text="Takle">Takle</h1>
+        <h1 class="time" data-text="Times">Times</h1>
+    </div>
+
+    <h3>Choice one of your favorite teams to see when and where they play along with where to get your tickets!</h3>
+
+    <div class="next-btn">
+        <a href="#" class="myButton" id="nextButton" style="display: none;">Next</a>
+    </div>
+    
+    <div class="MyFavTeam">
+        <div class="box">
+            <h2>My Favorite Teams</h2>
+        </div>
+
+        <div class="box">
+            <h2>Calendar</h2>
+        </div>
+    </div>
+
+    <div class="allTeams">
+        <div class="row" id="teamList">
+            {{#each teams}}
+        <div class="favoriteTeam">
+            <img id="{{id}}" src="{{imageSrc}}" alt="{{altText}}" onclick="toggleBackground(this)">
+        </div>
+        {{/each}}
+        </div>
+    </div>
+    
+   
+    
+    <script src="css-js/myFavotiteTeams.js"></script>
+</body>
+</html>
