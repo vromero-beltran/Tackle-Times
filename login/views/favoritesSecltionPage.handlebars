@@ -35,18 +35,40 @@
         </div>
 
         <!-- Use Handlebars templates for teams -->
-        <script id="team-template" type="text/x-handlebars-template">
-            <div class="favoriteTeam">
-                <img id="{{id}}" src="{{imageSrc}}" alt="{{altText}}" onclick="toggleBackground(this)">
-            </div>
-        </script>
+       
 
         <div class="All-Teams">
             <div class="teams">
                 <!-- Include Handlebars content here -->
+                 <div class="NflTeams">
+                <img id="{{id}}" src="{{imageSrc}}" alt="{{altText}}" onclick="toggleBackground(this)">
+            </div>
             </div>
         </div>
     </div>
+<script>
+    // Define a function to fetch and display team data
+    function fetchAndDisplayTeamData() {
+        fetch('teamData.json') // Replace 'teamdata.json' with the correct path to your JSON file
+            .then((response) => response.json())
+            .then((data) => {
+                // Get the Handlebars template
+                const source = document.getElementById('team-template').innerHTML;
+                const template = Handlebars.compile(source);
+
+                // Select the container where you want to display the data
+                const container = document.querySelector('.teams');
+
+                // Loop through the data and append the rendered template to the container
+                data.forEach((team) => {
+                    container.innerHTML += template(team);
+                });
+            });
+    }
+
+    // Call the function to fetch and display team data
+    fetchAndDisplayTeamData();
+</script>
 
     <!-- Include Handlebars library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
