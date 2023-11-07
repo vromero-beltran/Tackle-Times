@@ -19,6 +19,52 @@ body {
   background-color: var(--quatrinary);
 }
 
+.takle{
+  color: red;
+  z-index: 1;
+  color: red;
+  font-size: 200px;
+  text-shadow: 1px 1px 1px #000000,
+  1px 2px 1px white,
+  1px 3px 1px white,
+  1px 4px 1px blue,
+  1px 5px 1px blue,
+  1px 6px 1px blue,
+  1px 10px 5px rgba(16, 16, 16, 0.5),
+  1px 15px 10px rgba(16, 16, 16, 0.4),
+  1px 20px 30px rgba(16, 16, 16, 0.3),
+  1px 25px 50px rgba(16, 16, 16, 0.2);
+}
+.time{
+  color: white;
+  font-size: 200px;
+  text-shadow: 1px 1px 1px #000000,
+  1px 2px 1px red,
+  1px 3px 1px red,
+  1px 4px 1px blue,
+  1px 5px 1px blue,
+  1px 6px 1px blue,
+  1px 10px 5px rgba(16, 16, 16, 0.5),
+  1px 15px 10px rgba(16, 16, 16, 0.4),
+  1px 20px 30px rgba(16, 16, 16, 0.3),
+  1px 25px 50px rgba(16, 16, 16, 0.2);
+  z-index: 1;
+}
+
+.TakleTimes {
+  position: relative;
+  font-size: 100px;
+  text-align: center;
+  margin: 0 0 100px 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(25, 27, 39);
+  /* Set background video properties */
+}
+
 a {
   color: var(--dark);
   text-decoration: none;
