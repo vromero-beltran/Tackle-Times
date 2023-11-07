@@ -3,6 +3,7 @@ const withAuth = require('../utils/auth');
 const { Team, User } = require('../models');
 
 
+
 router.get('/', async (req, res) => {
   try {
     // Get all teams and JOIN with user data
@@ -61,7 +62,7 @@ router.get('/profile', withAuth, async (req, res) => {
 
     const user = userData.get({ plain: true });
 
-    res.render('profile', {
+    res.render('myFavoriteTeams', {
       ...user,
       logged_in: true
     });
@@ -78,7 +79,4 @@ router.get('/login', (req, res) => {
 
   res.render('login');
 });
-
-
-
 module.exports = router;
