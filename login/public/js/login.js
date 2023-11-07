@@ -12,7 +12,7 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('http://127.0.0.1:5501/myfavoriteteams.html');
+      document.location.replace('/favteam');
     } else {
       alert('Failed to log in.');
     }
