@@ -15,16 +15,24 @@ Team.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    event: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    location: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     description: {
       type: DataTypes.STRING,
+      allowNull: false,
     },
-    date_created: {
+    date: {
       type: DataTypes.DATE,
       allowNull: false,
-      defaultValue: DataTypes.NOW,
     },
-    needed_funding: {
-      type: DataTypes.FLOAT,
+    time: {
+      type: DataTypes.TIME,
       allowNull: false,
     },
     user_id: {
